@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Programming Tips</title>
+  </head>
+  <body class="bg-gray-100 font-poppins">
+    <main class="m-4 max-w-4xl md:m-auto">
+      <section class="mb-8 text-center">
+        <h1 class="text-4xl font-extrabold mb-4 text-gray-800">
+          Programming Languages and
+          <span class="text-[#cc447d]">Tips</span>
+        </h1>
+        <p class="text-lg text-gray-600">
+          Find the best tips for your programming journey by
+          <span class="text-blue-600"> Leowave</span>
+        </p>
+      </section>
+      <div class="mb-8 flex flex-col md:flex-row items-center gap-4">
+        <input
+          type="text"
+          class="w-full md:w-3/4 bg-white p-4 rounded-lg shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out"
+          placeholder="Search for tips..."
+          id="input_main"
+        />
+        <button
+          class="bg-[#db749f] text-white px-6 py-3 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-[#BE2B68] transition duration-300 ease-in-out"
+          id="search_button"
+        >
+          Search
+        </button>
+        <select
+          id="language-filter"
+          class="w-full md:w-1/4 bg-white p-4 rounded-lg shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#BE2B68] focus:border-[#BE2B68] transition duration-300 ease-in-out"
+        >
+          <option value="">All Languages</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Ruby">Ruby</option>
+          <option value="C++">C++</option>
+        </select>
+      </div>
+      <div id="display"></div>
+      <div class="loader-overlay">
+        <div class="loader"></div>
+      </div>
+    </main>
+
+    <script type="module" src="./scripts/view.js"></script>
+  </body>
+</html>
