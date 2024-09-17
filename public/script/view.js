@@ -21,7 +21,7 @@ class view {
     this.showLoader();
 
     try {
-      let response = await fetch("../data.json");
+      let response = await fetch("./data.json");
       this.data = await response.json();
       this.displayData(this.data);
     } catch (error) {
