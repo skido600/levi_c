@@ -23,6 +23,7 @@ class view {
     try {
       let response = await fetch("./data.json");
       this.data = await response.json();
+      console.log(this.data);
       this.displayData(this.data);
     } catch (error) {
       console.error("Error fetching data:", error);
